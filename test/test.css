@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   font-family: system-ui;
+}
+.clear{
+    clear: both;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.pad-y{
+    padding:70px 0;
+}
+.marg{
+    margin: 0 5%;
+}
+
+.ltr-effect{
+    position: relative;
+}
+.ltr-effect::after{
+    content: '';
+    height: 100%;
+    background-color: #9442d6;
+    width:0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.ltr-effect:hover::after{
+    width: 100%;
+}
+
+/*-- --header section -- --*/
+
+
+header{
+    position:fixed;
+    z-index: 1;
+    width: 100%;
+    background: rgba(0, 0,0 , 0.8);
+}
+.header-content .logo{
+    width: 20%;
+    float: left;
+}
+.header-content h3{
+font-size: 27px;
+margin-top: 19px;
+color: #fff;
+}
+.header-content h3 span{
+    color: #9442d6;
+}
+.header-content ul{
+    width: 80%;
+    float:left;
+    text-align: right;
+}
+.header-content ul li{
+    display: inline-block;
+    text-align: right;
+    margin-right: 18px;
+}
+.header-content ul li a{
+    color: #fff;
+    font-size: 15px;
+    padding: 30px 5px;
+    display: block;
+}
+.header-content ul li a:hover, .active{
+border-bottom: 2px solid #9442d6;
+    
+}
+/*----- home section------ */
+
+#home{
+    height: 100vh;
+    background: url(abt1.jpg);
+    background-size: cover;
+    position: relative;
+}
+.homecontent{
+    width: 65%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+
+}
+.homecontent h1{
+    font-size: 3.5rem;
+    color: #fff;
+}
+.homecontent .home-p{
+    color: #fff;
+    margin: 20px 0;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+.homecontent .btn{
+    border: none;
+    border-radius: 5px;
+    min-width: 150px;
+    padding: 10px 0;
+    font-size: 17px ;
+}
+.homecontent .btn-start{
+    margin-right: 10px;
+    background-color: #9442d6;
+    color: #fff;
+}
+.homecontent .btn-more{
+   color: #000;
+    background-color: #ffffff;
+}
+.homecontent .btn-start:hover{
+     color: #9442d6;
+     background-color: #fff;
+}
+.homecontent .btn-more:hover{
+    color: #fff;
+    background-color: #000;
+}
+
+
+ /* ---- skills section -----*/
+ 
+ .skills{
+     height: 100vh;
+ }
+.title-text{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.title-text h3{
+    color: #9442d6;
+    font-size: 30px;
+}
+.title-text p{
+    color: #000;
+    font-size: 50px;
+    font-weight: bold;
+}
+.title-text span{
+    margin: 10px auto 0 auto;
+    width: 40px;
+    height: 4px;
+    background-color: #9442d6;
+    display: block;
+}
+
+.cards{
+overflow: hidden;
+}
+.card{
+    width: 30%;
+    text-align: center;
+    border: 1px solid #e8e8e8;
+    padding: 50px 20px;
+    float: left;
+    
+}
+.card i{
+    color: #9442d6;
+    margin-bottom: 10px;
+}
+.card h2{
+    margin-bottom: 10px;
+}
+.card p{
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: #979696;
+}
+.card-link{
+    color: #fff;
+    background-color: #9442d6;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+/* ---- start card hover  ---- */
+.card:hover i{
+    color: #fff;
+}
+.card:hover h2{
+    color: #fff;
+}
+.card:hover p{
+    color: rgb(15, 15, 15);
+}
+.card:hover .card-link{
+    color: #9442d6;
+    background-color: #fff;
+}
+/* ----  end card hover   */
+
+/* ----  services section ---- */
+.services{
+    background-color: #cccccc;
+}
+.service-content{
+    overflow: hidden;
+}
+.service-item{
+    width: 32%;
+    float: left;
+    margin-bottom: 25px;
+    position: relative;
+    padding: 20px;
+}
+.service-item img{
+    width: 100%;
+}
+.service-item.second-marg{
+    margin: 0 2%;
+}
+.service-item .layer-item{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+opacity: 0;
+background-color: rgba(0, 0, 0, 0.5);
+}
+.service-item:hover .layer-item{
+    opacity: 1;
+}
+.layer-item .layer-info{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+}
+
+.layer-item span{
+    display: block;
+    margin-bottom: 5px;
+    color: #9442d6;
+    font-weight: bolder;
+    font-size: 17px;
+}
+.layer-item h3{
+    font-size: 21px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.layer-item a{
+    color: #fff;
+}
+.layer-item a i{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #9442d6;
+}
+
+/* -------portfolio-- */
+
+.porfolio-content{
+overflow: hidden;
+}
+.portfolio-item{
+    width: 30%;
+    border: 1px solid #e8e8e8;
+    padding: 30px 15px 30px 70px;
+    position: relative;
+    float: left;
+    margin-bottom: 20px;
+}
+.portfolio-item i{
+    color:#9442d6;
+    position: absolute;
+    left:15px;
+    right: 35px;
+}
+.portfolio-item h2{
+margin-bottom: 15px;
+}
+.portfolio-item p{
+    line-height: 1.5;
+    color: #979696;
+    text-align: center;
+}
+
+.portfolio-item:hover i{
+    color: #fff;
+}
+.portfolio-item:hover h2{
+    color: #fff;
+}
+.portfolio-item:hover p {
+    color: #000;
+}
+/* advantage section */
+ .advantage{
+     background-color: #CCCCCC;
+     margin-top: 450px;
+ }
+.adv-item{
+    width: 50%;
+    float: left;
+}
+.adv-item .title-text{ 
+    text-align: left;
+}
+.adv-item .title-text .line{
+    margin: 10px 0 20px 0;
+}
+
+.adv-img img{
+    width: 100%;
+    margin-top: 100px;
+}
+.points{
+text-align: center;
+}
+.points li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    color: #e8e8e8;
+}
+.adv-p{
+    padding-right: 20px;
+    color: #838383;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.adv-list li{
+    margin-bottom: 10px;
+    color: #838383;
+}
+.adv-list li i{
+    border: 1px solid #9442d6;
+    border-radius: 50%;
+    width: 30px ;
+    height: 30px;
+    padding: 6px;
+    color: #9442d6;
+}
+
+
+
+
+
+
+
+
+
+
+
+

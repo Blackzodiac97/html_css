@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: system-ui;
+ }
+ .clear{
+     clear: both;
+ }
+ ul{
+     list-style: none;
+ }
+ a{
+     text-decoration: none;
+     color: #000;
+ }
+ .container{
+    width: 80%;
+    margin: auto;
+}
+.pad-y{
+    padding:70px 0;
+}
+.marg{
+    margin: 0 12%;
+}
+
+ /* header section */
+header{
+    width: 100%;
+    position: fixed;
+    background-color: #f4ede1;
+    padding: 10px 0;
+    z-index: 1;
+}
+.headercontent .logo{
+    float: left;
+    width: 40%;
+}
+.headercontent h3{
+    font-size: 27px;
+    margin-top: 3px;
+ }
+.headercontent h3 span{
+        color: #e45826;
+}
+.headercontent ul{
+    float: left;
+    width: 60%;
+    text-align: right;
+}
+.headercontent ul li{
+    display: inline-block;
+    margin-right: 25px;
+}
+.headercontent ul li a{
+    font-size: 15px;
+    padding: 8px 15px;
+    display: block;
+    margin-top: 3px;
+}   
+.headercontent ul li a:hover, .active{
+    border: 1px solid #e45826;
+    border-radius: 18px;
+}
+/* home section */
+#home{
+    background: #f4ede1;
+    height: 100vh;
+    position: relative;
+}
+.box{
+    background:linear-gradient(280deg, #db7d5b, #e45826);
+    width: 80%;
+    height: 500px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    border-radius: 15px 15px 340px 15px;
+}
+.homecontent{
+    margin-top:190px ;
+    margin-left: 60px;
+}
+.homecontent h1{
+    font-size: 55px;
+    font-family: 'Abril Fatface', cursive;
+    color: #fff;
+}
+.homecontent p{
+    color: #fff;
+}
+.homecontent .btn{
+    padding: 10px 0;
+    width: 150px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: #f4ede1;
+    color: #e45826;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.homeimg{
+  margin-top: -440px;
+  margin-left: 509px;
+
+}
+.homeimg img{
+    height: 705px;
+    filter: drop-shadow(0 60px 40px #f4ede1);
+}
+/* menu section */
+#menu{
+    height: 100vh;
+}
+.title-text{
+    text-align: center;
+}
+.title-text h3{
+    font-size: 30px;
+    color: #e45826;
+}
+.title-text p{
+    font-size: 50px;
+    font-weight: bold;
+}
+.title-text span{
+    margin: 10px auto 0 auto;
+    width: 40px;
+    height: 4px;
+    background-color: #e45826;
+    display: block;
+}
+.cards{
+    margin-top: 150px;
+    padding-top: 74px;
+    overflow: hidden;
+}
+.card {
+    position: relative;
+    width: 25%;
+    margin-bottom: 95px;
+    float: left;
+}
+.card .card-log{
+    position: absolute;
+    top: -85px;
+    left: 55px;
+}
+.card .card-log img{
+    width:150px;
+}
+.card .card-text {
+    height: 250px;
+    text-align: center;
+    border: 1px solid #e8e8e8;
+    padding: 50px 20px;
+    float: left;
+    box-shadow: 5px 5px 8px #eee , -5px 0 8px #eee ;
+}
+.card-text h2{
+    margin-top: 10px;
+}
+.card-text p{
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.card-text a{
+    color: #f4ede1;
+    background-color:#e45826;
+    padding: 10px;
+    font-weight: bold;
+}
+#chef{
+    margin-top: 450px;
+    background-color: #f4ede1;
+}
+
+
+
+
+
+
+
+
+
+
+
